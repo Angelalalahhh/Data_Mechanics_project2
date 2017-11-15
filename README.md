@@ -22,7 +22,6 @@ In statsmodel.py, we performed statistical analysis and built our model by addin
 
 We first built our model with clean 2012 data without outliers and tested it on clean 2013 data without outliers, and obtained an R-squared value of 0.984442. Then we built our model with all 2012 data with outliers and tested it in all 2013 data with outliers, and obtained an R-squared value of 0.998919. When running statsmodel.py, it will produce three graphs saved in the same directory, the first one is the pair-wise correlations between all variables, the second one is the results of the model on clean data, and the third one is the result of the model on all data. <br />
 
-<<<<<<< HEAD
 In __Machine Learning__ we are using a Multilyer Perceptron Network to try and fit the model to the given data with regularization:0.01. We used n^5 hidden layers where n is the number of variables. The model runs for approx 500 iterations and max 1000 iterations. It has an inital learning rate of 0.001 and a momentum of 0.4 <br />
 
 We first scaled the input using StandardScaler and then transformed both training and testing inputs using the same scaler we used to scale the training data. <br />
@@ -30,15 +29,6 @@ We first scaled the input using StandardScaler and then transformed both trainin
 We then trained the model on the training set and used the testing set (clean2013 data) to predict the output.<br />
 We compared the predicted values from the model to the known output values of clean2013. <br />
 The model yields an R-squared value of 0.9978 which means it is pretty accurate, and the results can be seen in the plot MLP.png. <br />
-=======
-In __Machine Learning__ we are using a Multilyer Perceptron Network to try and fit the model to the given data with regularization:0.01. (To prevent overfitting). We use n^5 hidden layers where n is the number of variables. The model runs for max 1000 iterations which gives us a good enough model given some margin of error but it hasnt converged yet. It has an inital learning rate of 0.001 and a momentum of 0.4 <br />
-
-We first scale the input using StandardScaler and we transform both training and testing inputs using the same scaler we used to scale the training data. <br />
-We then train the model on the training set and use the testing set (clean2013 data) to predict the output.<br />
-We then compare the predicted values from the model to the known output values of clean2013. <br />
-The model has an accuracy of (r2_score) 0.9978 for 1000 iterations which is pretty accurate and ideally this could go higher than the statistical model if allowed to converge but this would take a really long time. <br />
-The results can be seen in the plot MLP.png. <br />
->>>>>>> bd2b5f2febb628a91e533b7150ff70ef1403846d
 REF: http://dstath.users.uth.gr/papers/IJRS2009_Stathakis.pdf
 
 To run all files, execute the following command in root directory (course-2017-fal-proj):
